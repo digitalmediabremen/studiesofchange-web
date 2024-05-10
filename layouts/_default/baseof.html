@@ -12,8 +12,13 @@
   </head>
   <body>
     <header>
-      <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+      <a href="{{ .Site.BaseURL }}">
+        <img src="/logo@2x.png" alt="{{ .Site.Title }}">
+      </a>
     </header>
+    <img class="bg-02" src="/bg-02@2x.png" alt="">
+    <img class="bg-01" src="/bg-01@2x.png" alt="">
+    <img class="borders" src="/borders@2x.png" alt="">
     <main>
       {{ block "main" . }}{{ end }}
     </main>

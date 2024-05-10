@@ -6,14 +6,59 @@
 	font-family: sans-serif;
 	font-weight: normal;
 	font-size: 18px;
-	color: black;
+	line-height: 1em;
+	color: white;
 }
 
 ul {
 	list-style: none;
 }
 
+h2 {
+	font-size: 4.1rem;
+}
+
 header,
 main {
-	padding: 1rem;
+	// padding: 1rem;
+	position: relative;
+	z-index: 100;
+}
+
+header {
+	position: fixed;
+	img {
+		width: 100vw;
+	}
+}
+
+main {
+	min-height: 200vh;
+	padding-top: 21vw;
+	padding-left: 1.5vw;
+	padding-right: 1.5vw;
+}
+
+.bg-01,
+.bg-02,
+.borders {
+	position: absolute;
+	top: 0;
+	left: 0;
+	// right: 0;
+	width: 100vw;
+}
+
+.base-info {
+	// position: fixed;
+	// bottom: 1rem;
+	// right: 0;
+	width: 50vw;
+}
+
+.artists ul {
+	columns: 2;
+	width: 50vw;
+	margin-left: 50vw;
+	text-align: center;
 }

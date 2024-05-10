@@ -1,3 +1,6 @@
 baseURL = 'https://studiesofchange.hfk-bremen.de'
 languageCode = 'en-us'
 title = 'Studies of Change'
+
+[markup.goldmark.renderer]
+unsafe= true

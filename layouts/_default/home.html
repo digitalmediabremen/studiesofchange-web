@@ -2,10 +2,12 @@
   {{ .Content }}
 
   {{ with .Site.GetPage "artists" }}
-    <ul>
-      {{ range .Pages }}
-        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-      {{ end }}
-    </ul>
+    <div class="artists">
+      <ul>
+        {{ range .Pages.ByParam "lastname" }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
   {{ end }}
 {{ end }}
