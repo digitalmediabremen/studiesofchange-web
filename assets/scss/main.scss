@@ -1,0 +1,19 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+	color: black;
+}
+
+ul {
+	list-style: none;
+}
+
+header,
+main {
+	padding: 1rem;
+}
