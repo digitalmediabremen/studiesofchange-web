@@ -2,7 +2,7 @@
 
 
 const nextConfig = {
-  basePath: '/studiesofchange_web', // remove on prod. build
+  basePath: '/studiesofchange-web', // remove on prod. build
   reactStrictMode: true,
   output: 'export',
   images:{
