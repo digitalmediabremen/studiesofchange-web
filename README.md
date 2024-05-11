@@ -1,8 +1,10 @@
+https://choiharam.github.io/studiesofchange-web
+
 ### How to Run Locally
 
 ```bash
-npm i # install node packages
-npm run dev # hot-reload supported
+npm i
+npm run dev
 ```
 
 ### Export Static Pages
