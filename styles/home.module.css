@@ -15,11 +15,25 @@
   .bg_01,
   .bg_02,
   .border{
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: auto;
     top: 0;
     left: 0;
+  }
+
+  @keyframes bg_02 {
+    from {
+      transform: translate(0, 0) rotate(0);
+    }
+
+    to {
+      transform: translate(0, -30px) rotate(0);
+    }
+  }
+
+  .bg_02{
+    animation: 10s bg_02 alternate infinite;
   }
 
   .title_div{
@@ -47,23 +61,51 @@
 
   }
 
+  @keyframes arrow {
+    from {
+      transform: translate(-10px, 20px) rotate(0);
+    }
+
+    50% {
+      transform: translate(-10px, 0) rotate(0);
+    }
+
+    to {
+      transform: translate(0, 0) rotate(2deg);
+    }
+  }
+
+  @keyframes arrow_flip {
+    from {
+/*      transform: translate(-10px, 20px) rotate(0);*/
+      transform: rotate(180deg) translate(-10px, 20px);
+    }
+
+    to {
+/*      transform: translate(0, 0) rotate(2deg);*/
+      transform: rotate(183deg) translate(-5px, 10px);
+    }
+  }
+
   .table_arrow{
-    text-align: right;
     max-width: 800px;
-    width: 50vw;
+    width: 48vw;
     height: auto;
     margin: 0 auto;
+    margin-right: 2vw;
+    animation: 19s arrow alternate infinite;
   }
   .table_arrow_flip{
-    text-align: left;
     max-width:800px;
-    width: 50vw;
+    width: 48vw;
     height: auto;
     margin: 0 auto;
-    transform:rotate(180deg);
+    margin-left: 2vw;
+    animation: 8s arrow_flip alternate infinite;
   }
   .table_info_text{
-    text-align: right;
+/*    text-align: right;*/
+    text-align: left;
     font-weight: normal;
     font-size: 1.3vw;
     line-height:0.1vh;
@@ -72,24 +114,44 @@
     width: 50vw;
     height: auto;
     margin: 0 auto;
+    padding-left: 4vw;
+    padding-bottom: 2vw;
+    vertical-align: bottom;
+
+    text-shadow: 0 0 0.5em #66B32E;
   }
 
   .table_curatorial_text{
     text-align: justify;
     font-weight: normal;
     font-size: 1.4vw;
-    line-height:vh;
+/*    line-height:vh;*/
+    line-height: 1em;
     color:white;
-    max-width: 800px;
-    width: 50vw;
+/*    max-width: 800px;*/
+/*    width: 10vw;*/
     height: auto;
     margin: 0 auto;
+    padding-right: 4vw;
+    vertical-align: top;
+    text-shadow: 0 0 0.5em #66B32E;
   }
 
   .table_placeholder{
-    max-width: 800px;
-    width: 50vw;
+/*    max-width: 800px;*/
+/*    width: 50vw;*/
     height: 20vw;
     margin: 0 auto;
     /* border: 1px solid black; */
+  }
+
+  .table_logos {
+    display: flex;
+    gap: 1vw;
+    padding-left: 4vw;
+  }
+
+  .table_logos img {
+    max-width: 100px;
+    height: auto;
   }
