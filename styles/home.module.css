@@ -90,24 +90,23 @@
   }
 
   .table_arrow{
+    display: block;
     max-width: 800px;
     width: 48vw;
     height: auto;
-    margin: 0 auto;
-    margin-right: 2vw;
+    margin: 0 auto 0 0;
     animation: 19s arrow alternate infinite;
   }
   .table_arrow_flip{
+    display: block;
     max-width:800px;
     width: 48vw;
     height: auto;
-    margin: 0 auto;
-    margin-left: 2vw;
+    margin: 0 0 0 auto;
     animation: 8s arrow_flip alternate infinite;
   }
   .table_info_text{
-/*    text-align: right;*/
-    text-align: left;
+   text-align: right;
     font-weight: normal;
     font-size: 1.3vw;
     line-height:0.1vh;
@@ -149,6 +148,7 @@
 
   .table_logos {
     display: flex;
+    width: 48vw;
     gap: 1vw;
     padding-left: 4vw;
   }
