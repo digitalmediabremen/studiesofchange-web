@@ -17,7 +17,9 @@
   .border{
     position: fixed;
     width: 100vw;
-    height: auto;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top center;
     top: 0;
     left: 0;
   }
