@@ -19,6 +19,7 @@
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+    object-position: top center;
     top: 0;
     left: 0;
   }
