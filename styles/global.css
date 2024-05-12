@@ -34,3 +34,7 @@ a:link {
 a:visited{
   color: black;
 }
+
+/* table, td, th{
+  border: 5px solid red;
+} */

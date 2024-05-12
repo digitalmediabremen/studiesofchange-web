@@ -106,7 +106,7 @@
     animation: 8s arrow_flip alternate infinite;
   }
   .table_info_text{
-   text-align: right;
+   text-align: left;
     font-weight: normal;
     font-size: 1.3vw;
     line-height:0.1vh;
@@ -123,18 +123,16 @@
   }
 
   .table_curatorial_text{
-    text-align: justify;
-    font-weight: normal;
-    font-size: 1.4vw;
-/*    line-height:vh;*/
-    line-height: 1em;
-    color:white;
-/*    max-width: 800px;*/
-/*    width: 10vw;*/
+    width: auto;
     height: auto;
     margin: 0 auto;
     padding-right: 4vw;
     vertical-align: top;
+    text-align: justify;
+    font-weight: normal;
+    font-size: 1.4vw;
+    line-height: 1em;
+    color:white;
     text-shadow: 0 0 0.5em #66B32E;
   }
 
