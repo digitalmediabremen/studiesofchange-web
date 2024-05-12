@@ -10,7 +10,7 @@ import bg02_mobile from '../public/design/bg-02@2x.png'
 import { siteTitle } from "../components/layout";
 import Device from "../components/device";
 import Table from "../components/table";
-
+import Header from "../components/header";
 
 // export async function getStaticProps({ }: any) {
 //   return {
@@ -24,9 +24,7 @@ export default function Home() {
     <Layout>
       {
         <div>
-          <div className={styles.title_div}>
-            <Image priority className={styles.title} src={titlePic} alt={siteTitle} />
-          </div>
+          <Header />
           <Device>
             {({ isMobile }) => {
               if (!isMobile) {

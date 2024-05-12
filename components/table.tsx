@@ -1,10 +1,12 @@
 import Image from 'next/image';
-import Layout from "../components/layout";
 import styles from '../styles/home.module.css';
 import arrowPic from '../public/design/arrow.png'
 import logoHfk from '../public/logos/hfk.png'
 import logoDigitalmedia from '../public/logos/digitalmedia@2x.png'
 import logoGeg from '../public/logos/geg.png'
+import texts from '../texts/curatorial';
+import React from 'react';
+
 
 export async function getStaticProps() {
     return {
@@ -33,13 +35,14 @@ export default function Table() {
                 <tr>
                     <td><Image priority className={styles.table_arrow_flip} src={arrowPic} alt="" /></td>
                     <td className={styles.table_curatorial_text}>
-                        Curatorial text<br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <h3 dangerouslySetInnerHTML={{ __html: texts.en.title }}></h3>
+                        <p dangerouslySetInnerHTML={{ __html: texts.en.subtitle }}></p>
+                        <p dangerouslySetInnerHTML={{ __html: texts.en.body }}></p>
                     </td>
                 </tr>
                 <tr>
-                    <td className={styles.table_placeholder}></td>
-                    <td><Image priority className={styles.table_arrow} src={arrowPic} alt="" /></td>
+                    <td colSpan={2} className={styles.table_placeholder}></td>
+                    {/* <td ><Image priority className={styles.table_arrow} src={arrowPic} alt="" /></td> */}
                 </tr>
                 <tr>
                     <td><Image priority className={styles.table_arrow_flip} src={arrowPic} alt="" /></td>
