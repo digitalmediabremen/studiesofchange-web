@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import bg01 from "@/../public/assets/design/arrow@2x.png";
 import bg02 from "@/../public/assets/design/back@2x.png";
 import border from "@/../public/assets/design/border@2x.png";
@@ -42,13 +43,13 @@ export function Background() {
                 style={{
                     backgroundImage: `url(${border.src})`,
                     backgroundPosition: "top center",
-                    backgroundRepeat: "repeat-y",
+                    backgroundRepeat: "no-repeat",
                     width: "100vw",
                     height: "100vh",
                     position: "fixed",
                     top: 0,
                     left: 0,
-                    zIndex: 1,
+                    zIndex: -1,
 
                 }}
 

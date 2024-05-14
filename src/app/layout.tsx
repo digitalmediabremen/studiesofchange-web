@@ -1,3 +1,4 @@
+import Footer from "@/app/_components/footer";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
@@ -53,6 +54,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <div className="min-h-screen">{children}</div>
+        {/* <Footer /> */}
       </body>
     </html>
   );
