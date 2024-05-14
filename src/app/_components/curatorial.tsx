@@ -1,6 +1,4 @@
-import Avatar from "@/app/_components/avatar";
 import Link from "next/link";
-import DateFormatter from "./date-formatter";
 
 type Props = {
   title: string;
