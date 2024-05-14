@@ -24,7 +24,7 @@ export default function Home() {
     <Layout>
       {
         <div>
-          <Header />
+          {/* <Header /> */}
           <Device>
             {({ isMobile }) => {
               if (!isMobile) {

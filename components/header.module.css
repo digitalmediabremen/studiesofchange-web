@@ -1,6 +1,3 @@
-.header{
-    z-index: 10;
-}
 .title_div{
     width:100vw;
     position: fixed;
@@ -17,18 +14,3 @@
     height: auto;
     margin: 0 auto;
   }
-.nav{
-    position: relative;
-    width:100%;
-    top:0;
-    left:0;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-weight: normal;
-    font-size: 1.3vw;
-    /* line-height:0.1vh; */
-    color:white;
-    text-shadow: 0 0 0.5em #66B32E;
-}

@@ -74,6 +74,18 @@
     }
   }
 
+  .title_div{
+    width:100vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title {
+    width: 100vw;
+    max-width: 1600px;
+    height: auto;
+  }
+
   .table_arrow{
     display: block;
     max-width: 800px;
@@ -108,19 +120,23 @@
   }
 
   .table_curatorial_text{
+    background-color: rgba(0,0,0,0.6);
     max-width:30vw;
     width: auto;
     height: auto;
     margin: 0 auto;
     padding-right: 4vw;
     vertical-align: top;
-    text-align: justify;
+    text-align: left;
     font-weight: normal;
-    font-size: 1.4vw;
-    line-height: 1em;
+    /* font-size: min(2vw,36px); */
+    font-size: 1rem;
+    line-height: 1.2em;
     color:white;
     text-shadow: 0 0 0.5em #66B32E;
+    padding:0 1rem 0 1rem;
   }
+  
 
   .table_placeholder{
 /*    max-width: 800px;*/
