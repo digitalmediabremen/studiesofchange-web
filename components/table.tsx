@@ -61,21 +61,21 @@ export default function Table() {
                     {
                         (enOrDe ?
                             [// english curatorial
-                                <td className={styles.table_curatorial_text}>
+                                <td className={styles.table_curatorial_text} key={0}>
                                     <p>{texts.en.body[0]}</p>
                                     <p>{texts.en.body[1]}</p>
                                 </td>,
-                                <td className={styles.table_curatorial_text}>
+                                <td className={styles.table_curatorial_text}key={1}>
                                 <p>{texts.en.body[2]}</p>
                                 <p></p>
                             </td>
                             ]
                             : [// deutsch curatorial
-                                <td className={styles.table_curatorial_text}>
+                                <td className={styles.table_curatorial_text} key={0}>
                                     <p>{texts.de.body[0]}</p>
                                     <p>{texts.de.body[1]}</p>
                                 </td>,
-                                <td className={styles.table_curatorial_text}>
+                                <td className={styles.table_curatorial_text} key={1}>
                                 <p>{texts.de.body[2]}</p>
                                 <p></p>
                             </td>
