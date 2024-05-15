@@ -23,9 +23,8 @@ export default async function Post({ params }: Params) {
   return (
     <main>
       <Background />
+      <Header />
       <Container>
-        {/* <Title /> */}
-        <Header />
         <Background />
         <article className="mb-32">
           <PostHeader

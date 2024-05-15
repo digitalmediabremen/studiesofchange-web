@@ -38,6 +38,28 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["Helvetica", "ui-sans-serif", "system-ui"],
+        serif: ["serif"],
+      },
+      animation: {
+        bg: "10s bg alternate infinite",
+        bg2: "16s bg alternate infinite",
+        arrow: "19s arrow alternate infinite",
+        "arrow-flip": "8s arrow-flip alternate infinite"
+      },
+      keyframes: {
+        bg: {
+          from: { transform: "translate(0, 0) rotate(0)" },
+          to: { transform: "translate(0, -30px) rotate(0)" }
+        },
+        arrow: {
+          from: { transform: "translate(-10px, 20px) rotate(0)" },
+          "50%": { transform: "translate(-10px, 0) rotate(0)" },
+          to: { transform: "translate(0, 0) rotate(2deg)" }
+        },
+        "arrow-flip": {
+          from: { transform: "rotate(180deg) translate(-10px, 20px)" },
+          to: { transform: "rotate(183deg) translate(-5px, 10px)" }
+        }
       },
     },
   },
