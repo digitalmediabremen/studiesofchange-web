@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+div{
+    color:white;
+    text-shadow: 0 0 0.5em #66B32E;
+}

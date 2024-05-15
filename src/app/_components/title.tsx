@@ -8,7 +8,7 @@ export function Title() {
       <Link href="/">
       <Image
         src={title_img}
-        className="w-[100vw] h-[auto]"
+        className="w-[100vw] h-[auto] max-w-[1600px] ml-auto mr-auto"
         alt="title"
       />
       </Link>

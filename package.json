@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@next/font": "^14.2.3",
     "classnames": "^2.5.1",
     "date-fns": "^3.3.1",
     "globby": "^14.0.1",
