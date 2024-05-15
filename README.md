@@ -17,7 +17,7 @@ npm run build
 ```bash
 npm run fetch
 ```
-will fetch the work descriptions from the google doc.
+will fetch the work descriptions from the google doc and create `.md` files in the `_text/` directory.
 
 ### On Production Build
 - Remove the `basePath` in `next.config.js`
