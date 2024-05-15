@@ -3,6 +3,7 @@
   "scripts": {
     "dev": "python3 scripts/process_text.py && next",
     "build": "python3 scripts/process_text.py && next build",
+    "fetch": "python3 scripts/fetch_data.py",
     "start": "next start"
   },
   "dependencies": {
