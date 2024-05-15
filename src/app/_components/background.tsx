@@ -7,11 +7,9 @@ export function Background() {
     return (
         <section>
             <div
-                className="bg-cover"
+                className="bg-cover bg-top bg-no-repeat animate-bg"
                 style={{
                     backgroundImage: `url(${bg02.src})`,
-                    backgroundPosition: "top center",
-                    backgroundRepeat: "no-repeat",
                     width: "100vw",
                     height: "100vh",
                     position: "fixed",
@@ -23,11 +21,9 @@ export function Background() {
             >
             </div>
             <div
-                className="bg-cover"
+                className="bg-cover bg-top bg-no-repeat animate-bg2"
                 style={{
                     backgroundImage: `url(${bg01.src})`,
-                    backgroundPosition: "top center",
-                    backgroundRepeat: "no-repeat",
                     width: "100vw",
                     height: "100vh",
                     position: "fixed",
@@ -39,11 +35,9 @@ export function Background() {
             >
             </div>
             <div
-                className="bg-cover"
+                className="bg-contain bg-repeat bg-top"
                 style={{
                     backgroundImage: `url(${border.src})`,
-                    backgroundPosition: "top center",
-                    backgroundRepeat: "no-repeat",
                     width: "100vw",
                     height: "100vh",
                     position: "fixed",

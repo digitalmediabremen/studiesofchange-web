@@ -16,12 +16,16 @@ export function PostHeader({ title, subtitle, author, year, medium_type, materia
   return (
     <>
       <TextTitle>{title}</TextTitle>
-      <TextSubtitle>{subtitle}</TextSubtitle>
+      {/*<TextSubtitle>{subtitle}</TextSubtitle>*/}
       <TextWorkinfo>{year}</TextWorkinfo>
-      <TextWorkinfo>{medium_type}</TextWorkinfo>
-      <TextWorkinfo>{material}</TextWorkinfo>
-      <TextWorkinfo>{dimension}</TextWorkinfo>
-      <div className="text-xl font-bold mt-6">{author}</div>
+      <TextWorkinfo>{author}</TextWorkinfo>
+      <div className="h-10"></div>
+      <TextWorkinfo>
+        {medium_type}<br />
+        {material}<br />
+        {dimension}
+      </TextWorkinfo>
+      
       <div className="md:block md:mb-12"></div>
     </>
   );

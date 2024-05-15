@@ -16,16 +16,16 @@ export function TextPreview({
   year,
 }: Props) {
   return (
-    <div>
-      <Link href={`/texts/${slug}`} className="hover:underline">
-        <h3 className="text-3xl leading-snug">
+    <div className="md:pr-10">
+      <Link href={`/texts/${slug}`}>
+        <h3 className="text-3xl leading-snug font-serif">
           {title}
         </h3>
         <h4 className="text-xl mb-3 leading-snug">
           {year}
         </h4>
-        <p className="text-xl leading-relaxed mb-4">{author}</p>
-        <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+        <p className="text-xl leading-normal mb-4">{author}</p>
+        <p className="text-lg leading-normal mb-4">{excerpt}</p>
       </Link>
     </div>
   );

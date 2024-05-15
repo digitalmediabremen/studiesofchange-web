@@ -25,32 +25,58 @@ export default function Index() {
       <Container>
         <section>
           <div className="mb-8 md:mb-16">
-            <Image src={arrow_img} alt="" />
+            
           </div>
-          <Link href={`/texts/${curatorial.slug}`} className="hover:underline">
-            <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
-              <div>
+          <Link href={`/texts/${curatorial.slug}`}>
+            <div className="md:grid md:grid-cols-2">
+              <div className="pr-20">
                 <h3 className="mb-0 text-4xl lg:text-5xl leading-tight">
                   {curatorial.title}
                 </h3>
-                <h4 className="mb-10 mt-5 text-3xl lg:text-3xl leading-tight italic">
+                <h4 className="mb-10 mt-1 text-3xl lg:text-3xl leading-tight italic">
                   {curatorial.subtitle}
                 </h4>
+                <p className="text-lg leading-normal mb-0">{curatorial.excerpt}</p>
               </div>
               <div>
-                <p className="text-lg leading-relaxed mb-0">{curatorial.excerpt}</p>
+                
+                <Image src={arrow_img} alt="" className="animate-arrow ml-auto max-w-[50%] md:max-w-[100%] md:ml-4" />
               </div>
             </div>
           </Link>
-          <h3 className="mt-1 mb-1 text-4xl lg:text-5xl mb-20 leading-tight">
-          Opening: 29.5. at 18:00<br />
-          30.05 — 02.06.2024<br />
-          Alte Pathologie, Am schwarzen Meer 134/136
-          </h3>
-          <div className="flex-col md:flex-row flex mt-16 mb-20 md:mb-12 justify-start">
-            <Image className="max-w-[100px] h-auto mr-5" src={hfk_logo} alt="" />
-            <Image className="max-w-[100px] h-auto mr-5" src={dm_logo} alt="" />
-            <Image className="max-w-[100px] h-auto mr-5" src={geg_logo} alt="" />
+
+          <div className="md:grid grid-cols-2 leading-tight">
+            <div>
+              <Image src={arrow_img} alt="" className="animate-arrow-flip max-w-[50%] md:max-w-[100%] md:-ml-4" />
+            </div>
+            <div>
+            <h3 className="mt-1 text-2xl md:text-3xl leading-none ml-2">
+              Opening: 29.5. at 18:00<br />
+              <span className="text-7xl md:text-9xl leading-[0.9em]">30.05 —<br />02.06.2024</span><br />
+              Alte Pathologie, Am schwarzen Meer 134/136
+              </h3>
+            </div>
+          </div>
+
+          <div className="md:grid grid-cols-2 leading-tight">
+            <div>
+            </div>
+            <div className="grid place-items-end">
+              <Image src={arrow_img} alt="" className="animate-arrow max-w-[50%] md:max-w-[100%] md:ml-4" />
+            </div>
+          </div>
+
+          <div className="md:grid grid-cols-2 leading-tight">
+            <div>
+              <Image src={arrow_img} alt="" className="animate-arrow-flip max-w-[50%] md:max-w-[100%] md:-ml-4" />
+            </div>
+            <div className="flex place-items-end">
+              <div className="flex-col md:flex-row flex md:mb-12 justify-start">
+                <Image className="max-w-[100px] h-auto mr-5" src={hfk_logo} alt="" />
+                <Image className="max-w-[100px] h-auto mr-5" src={dm_logo} alt="" />
+                <Image className="max-w-[100px] h-auto mr-5" src={geg_logo} alt="" />
+              </div>
+            </div>
           </div>
         </section>
         <Participants texts={allArtists} />
