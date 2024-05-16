@@ -10,6 +10,7 @@ import arrow_img from "@/../public/assets/design/arrow.png";
 import dm_logo from "@/../public/assets/logo/digitalmedia@2x.png";
 import hfk_logo from "@/../public/assets/logo/hfk.png";
 import geg_logo from "@/../public/assets/logo/geg.png";
+import zzz_logo from "@/../public/assets/logo/zzz.png";
 
 // Home page
 
@@ -75,6 +76,7 @@ export default function Index() {
                 <Image className="max-w-[100px] h-auto mr-5" src={hfk_logo} alt="" />
                 <Image className="max-w-[100px] h-auto mr-5" src={dm_logo} alt="" />
                 <Image className="max-w-[100px] h-auto mr-5" src={geg_logo} alt="" />
+                <Image className="max-w-[100px] h-auto mr-5" src={zzz_logo} alt="" />
               </div>
             </div>
           </div>
