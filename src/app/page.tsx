@@ -10,6 +10,7 @@ import arrow_img from "@/../public/assets/design/arrow.png";
 import dm_logo from "@/../public/assets/logo/digitalmedia@2x.png";
 import hfk_logo from "@/../public/assets/logo/hfk.png";
 import geg_logo from "@/../public/assets/logo/geg.png";
+import zzz_logo from "@/../public/assets/logo/zzz.png";
 
 // Home page
 
@@ -66,15 +67,16 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="md:grid grid-cols-2 leading-tight">
+          <div className="md:grid grid-cols-2 leading-tight mb-20">
             <div>
               <Image src={arrow_img} alt="" className="animate-arrow-flip max-w-[50%] md:max-w-[100%] md:-ml-4" />
             </div>
             <div className="flex place-items-end">
-              <div className="flex-col md:flex-row flex md:mb-12 justify-start">
-                <Image className="max-w-[100px] h-auto mr-5" src={hfk_logo} alt="" />
-                <Image className="max-w-[100px] h-auto mr-5" src={dm_logo} alt="" />
-                <Image className="max-w-[100px] h-auto mr-5" src={geg_logo} alt="" />
+              <div className="flex-col md:flex-row flex md:mb-12 justify-start flex-wrap gap-x-8 gap-y-4">
+                <Image className="max-w-[140px] h-auto" src={hfk_logo} alt="" />
+                <Image className="max-w-[140px] h-auto" src={dm_logo} alt="" />
+                <Image className="max-w-[140px] h-auto" src={geg_logo} alt="" />
+                <Image className="max-w-[140px] h-auto" src={zzz_logo} alt="" />
               </div>
             </div>
           </div>
