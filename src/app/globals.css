@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    color:white;
+    text-shadow: 0 0 0.5em #66B32E;
+}
+
+a, a *{
+    transition: text-shadow 0.3s;
+}
+
+a:hover, a:hover *{
+    text-shadow: 0 0 0.4em black;
+/*    color: #66B32E;*/
+}
