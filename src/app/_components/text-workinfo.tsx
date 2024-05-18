@@ -6,7 +6,7 @@ type Props = {
 
 export function TextWorkinfo({ children }: Props) {
 return (
-    <h1 className="text-xl mb-3 leading-snug">
+    <h1 className="text-xl mb-1 leading-snug max-w-[500px]">
         {children}
     </h1>
 );

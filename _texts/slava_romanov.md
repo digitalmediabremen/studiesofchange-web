@@ -4,7 +4,7 @@ author: "Slava Romanov"
 title: "PNCTM"
 year: "2024"
 medium_type: "Multimedia Installation"
-material: "3 multimedia objects on stands, each with an encapsulated diaslide, a 1080 3’00” animation, a subtle noise sound, and a magnifying glass on the top."
+material: "3 multimedia objects,  archive diaslides, expanded animation (3 min), magnifying glass."
 dimension: "300mm x 220 mm x 1200mm (one object)
 
 3m x 3m total"

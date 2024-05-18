@@ -73,10 +73,10 @@ export default function Index() {
             </div>
             <div className="flex place-items-end">
               <div className="flex-col md:flex-row flex md:mb-12 justify-start flex-wrap gap-x-8 gap-y-4">
-                <Image className="max-w-[140px] h-auto" src={hfk_logo} alt="" />
-                <Image className="max-w-[140px] h-auto" src={dm_logo} alt="" />
+                <Link href={"https://hfk-bremen.de"}><Image className="max-w-[140px] h-auto" src={hfk_logo} alt="" /></Link>
+                <Link href={"https://digitalmedia-bremen.de/"}><Image className="max-w-[140px] h-auto" src={dm_logo} alt="" /></Link>
                 <Image className="max-w-[140px] h-auto" src={geg_logo} alt="" />
-                <Image className="max-w-[140px] h-auto" src={zzz_logo} alt="" />
+                <Link href={"https://www.zzz-bremen.de/"}><Image className="max-w-[140px] h-auto" src={zzz_logo} alt="" /></Link>
               </div>
             </div>
           </div>

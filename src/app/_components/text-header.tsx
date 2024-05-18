@@ -12,21 +12,22 @@ type Props = {
   dimension: string;
 };
 
-export function PostHeader({ title, subtitle, author, year, medium_type, material, dimension }: Props) {
+export function TextHeader({ title, subtitle, author, year, medium_type, material, dimension }: Props) {
   const meta = []
-  if (year) meta.push(<TextWorkinfo>{year}</TextWorkinfo>)
   if (author) meta.push(<TextWorkinfo>{author}</TextWorkinfo>)
-  if (year || author) meta.push(<div className="h-10"></div>)
+  if (year) meta.push(<TextWorkinfo>{year}</TextWorkinfo>)
+  // if (year || author) meta.push(<div className="h-10"></div>)
   if (medium_type || material || dimension) meta.push(<TextWorkinfo>
       {medium_type}<br />
       {material}<br />
       {dimension}
     </TextWorkinfo>)
-  if (year || author || medium_type || material || dimension) meta.push(<div className="md:block md:mb-12"></div>)
+  if (year || author || medium_type || material || dimension) meta.push(<div className="md:block"></div>)
 
   return (
     <>
       <TextTitle>{title}</TextTitle>
+      {subtitle?<TextSubtitle>{subtitle}</TextSubtitle>:<></>}
       {meta}
     </>
   );

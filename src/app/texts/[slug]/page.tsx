@@ -5,13 +5,14 @@ import markdownToHtml from "@/lib/markdownToHtml";
 import Container from "@/app/_components/container";
 import Header from "@/app/_components/header";
 import Background from "@/app/_components/background";
-import { PostBody } from "@/app/_components/text-body";
-import { PostHeader } from "@/app/_components/text-header";
+import { TextBody } from "@/app/_components/text-body";
+import { TextHeader } from "@/app/_components/text-header";
+import Link from "next/link";
 import { Title } from "@/app/_components/title";
 
 // Page for each text
 
-export default async function Post({ params }: Params) {
+export default async function Text({ params }: Params) {
   const text = getTextBySlug(params.slug);
 
   if (!text) {
@@ -26,17 +27,27 @@ export default async function Post({ params }: Params) {
       <Header />
       <Container>
         <Background />
+        <>
+          {// show only in curatorial texts
+            (type.includes("curatorial")) ? <Link
+              href={(text.type.includes("_en")) ? "/texts/curatorial-de" : "/texts/curatorial-en"}
+              className="text-gray-500"
+            >
+              {(text.type.includes("_en")) ? "Zur deutschen Version" : "Switch to English Version"}
+            </Link> : ""
+          }
+        </>
         <article className="mb-32">
-          <PostHeader
+          <TextHeader
             title={text.title}
             subtitle={text.subtitle}
             year={text.year}
             medium_type={text.medium_type}
             material={text.material}
             dimension={text.dimension}
-            author={(type.includes("curatorial")?"":text.author)} // no author for curatorial. Shall we use the names of the writers?
+            author={text.author}
           />
-          <PostBody content={content} />
+          <TextBody content={content} />
         </article>
       </Container>
     </main>
@@ -70,7 +81,7 @@ export function generateMetadata({ params }: Params): Metadata {
 export async function generateStaticParams() {
   const texts = getAllTexts();
 
-  return texts.map((text:any) => ({
+  return texts.map((text: any) => ({
     slug: text.slug,
   }));
 }

@@ -4,7 +4,7 @@ title: "Studies of Change"
 subtitle: "Transformative dialogues between art, design and technology"
 excerpt: "Studies of Change will be an exhibition by 26 artists from the Hochschule für Künste Bremen that links art with technological, social, ecological, and political realms.
 From 29th May to 2nd June 2024 it will open the doors of Bremen’s Alte Pathologie to offer new ways of looking at the former municipal site. The variety of new media artworks has been produced in the Digital Media program at the Hochschule für Künste under the guidance of..."
-author: "Author Name"
+author: ""
 ---
 
 Studies of Change will be an exhibition by 26 artists from the Hochschule für Künste Bremen that links art with technological, social, ecological, and political realms.

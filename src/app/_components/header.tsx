@@ -8,7 +8,7 @@ const Header = () => {
     <Link href="/">
     <Image
       src={title_img}
-      className="w-[100vw] max-w-1600px h-auto md:h-auto mb-10 mt-8"
+      className="w-[100vw] h-[auto] max-w-[1600px] ml-auto mr-auto mb-[60px]"
       alt="title"
     />
     </Link>
@@ -17,3 +17,4 @@ const Header = () => {
 };
 
 export default Header;
+

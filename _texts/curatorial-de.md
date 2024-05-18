@@ -3,7 +3,7 @@ type: "curatorial_de"
 title: "Studies of Change"
 subtitle: "Transformative Dialoge zwischen Kunst, Design und Technologie"
 excerpt: "Die Ausstellung „Studies of Change\" zeigt Arbeiten von 26 Künstlerinnen und Künstlern der Hochschule für Künste Bremen welche in ihren Werken Kunst mit technologischen, sozialen, ökologischen und politischen Feldern verknüpfen. Vom 29. Mai bis zum 2. Juni 2024 öffnet die Ausstellung die Türen der Alten Pathologie in Bremen und bietet neue Einblicke in das ehemalige städtische Gebäude. Die diversen Medienkunstwerke wurden im Rahmen des Studiengangs Digitale Medien, unter der Begleitung von..."
-author: "Author Name"
+author: ""
 ---
 
 Die Ausstellung „Studies of Change" zeigt Arbeiten von 26 Künstlerinnen und Künstlern der Hochschule für Künste Bremen welche in ihren Werken Kunst mit technologischen, sozialen, ökologischen und politischen Feldern verknüpfen. Vom 29. Mai bis zum 2. Juni 2024 öffnet die Ausstellung die Türen der Alten Pathologie in Bremen und bietet neue Einblicke in das ehemalige städtische Gebäude.
