@@ -1,6 +1,6 @@
 ---
 type: artist
-author: "✅︎ Katja Striedelmeyer"
+author: "Katja Striedelmeyer"
 title: "Rehydrating Sphagnum Moss"
 year: "2024"
 medium_type: "Installation + Performance"

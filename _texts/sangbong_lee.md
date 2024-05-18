@@ -1,6 +1,6 @@
 ---
 type: artist
-author: "✅︎ Sangbong Lee"
+author: "Sangbong Lee"
 title: "Hidden dependency"
 year: "2024"
 medium_type: "Laser projection"

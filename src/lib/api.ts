@@ -23,7 +23,7 @@ export function getAllTexts(): Text[] {
   const texts = slugs
     .map((slug) => getTextBySlug(slug))
     // sort by artist name in descending order
-    .sort((post1, post2) => (post1.author > post2.author ? -1 : 1));
+    .sort((text1, text2) => (text1.author > text2.author ? -1 : 1));
   return texts;
 }
 
