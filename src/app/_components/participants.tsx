@@ -26,15 +26,6 @@ export function Participants({ texts }: Props) {
             />
           ))
         }
-          {/* <TextPreview
-            key={text.slug}
-            title={text.title}
-            year={text.year}
-            author={text.author}
-            slug={text.slug}
-            excerpt={text.excerpt}
-          /> */}
-
       </div>
     </section>
   );

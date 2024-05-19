@@ -1,7 +1,6 @@
 import Container from "@/app/_components/container";
 import Image from "next/image";
 import Link from "next/link";
-import { Title } from "@/app/_components/title";
 import { Background } from "@/app/_components/background";
 import { Participants } from "@/app/_components/participants";
 import { getAllArtists } from "@/lib/api";
@@ -21,12 +20,10 @@ export default function Index() {
 
   return (
     <main>
-      <Title />
-      <Background />
+
       <Container>
         <section>
           <div className="mb-8 md:mb-16">
-            
           </div>
           <Link href={`/texts/${curatorial.slug}`}>
             <div className="md:grid md:grid-cols-2">
@@ -40,7 +37,7 @@ export default function Index() {
                 <p className="text-lg leading-normal mb-0">{curatorial.excerpt}</p>
               </div>
               <div>
-                
+
                 <Image src={arrow_img} alt="" className="animate-arrow ml-auto max-w-[50%] md:max-w-[100%] md:ml-4" />
               </div>
             </div>
@@ -51,10 +48,10 @@ export default function Index() {
               <Image src={arrow_img} alt="" className="animate-arrow-flip max-w-[50%] md:max-w-[100%] md:-ml-4" />
             </div>
             <div>
-            <h3 className="mt-1 text-2xl md:text-3xl leading-none ml-2">
-              Opening: 29.5. at 18:00<br />
-              <span className="text-7xl md:text-9xl leading-[0.9em]">30.05 —<br />02.06.2024</span><br />
-              Alte Pathologie, Am schwarzen Meer 134/136
+              <h3 className="mt-1 text-2xl md:text-3xl leading-none ml-2">
+                Opening: 29.5. at 18:00<br />
+                <span className="text-7xl md:text-9xl leading-[0.9em]">30.05 —<br />02.06.2024</span><br />
+                Alte Pathologie, Am schwarzen Meer 134/136
               </h3>
             </div>
           </div>
