@@ -14,12 +14,12 @@ type Props = {
 
 export function TextHeader({ title, subtitle, author, year, medium_type, material, dimension }: Props) {
   const meta = []
-  if (author) meta.push(<TextWorkinfo>{author}</TextWorkinfo>)
-  if (year) meta.push(<TextWorkinfo>{year}</TextWorkinfo>)
-  // if (year || author) meta.push(<div className="h-10"></div>)
+  if (author) meta.push(<TextWorkinfo>-<br/>{author}</TextWorkinfo>)
+  if (year) meta.push(<TextWorkinfo>{year}<br/>-</TextWorkinfo>)
+  // if (year || author) meta.push(<div className="h-5"></div>)
   if (medium_type || material || dimension) meta.push(<TextWorkinfo>
-      {medium_type}<br />
-      {material}<br />
+      {medium_type}<br />-<br />
+      {material}<br />-<br />
       {dimension}
     </TextWorkinfo>)
   if (year || author || medium_type || material || dimension) meta.push(<div className="md:block"></div>)

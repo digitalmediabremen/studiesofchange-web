@@ -5,7 +5,8 @@
     "dev-only": "next",
     "build": "python3 scripts/process_text.py && next build",
     "fetch": "python3 scripts/fetch_data.py",
-    "start": "next start"
+    "start": "next start",
+    "qrcode": "node scripts/generateqr.mjs"
   },
   "dependencies": {
     "@next/font": "^14.2.3",
@@ -15,6 +16,7 @@
     "gray-matter": "^4.0.3",
     "next": "^14.2.3",
     "prettier": "^3.2.5",
+    "qrcode": "^1.5.3",
     "react": "^18",
     "react-dom": "^18",
     "remark": "^15.0.1",

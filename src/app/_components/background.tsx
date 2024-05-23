@@ -16,7 +16,7 @@ export function Background() {
                     top: 0,
                     left: 0,
                     zIndex: -1,
-
+                    filter: "brightness(80%)",
                 }}
             >
             </div>
@@ -30,6 +30,7 @@ export function Background() {
                     top: 0,
                     left: 0,
                     zIndex: -1,
+                    filter: "brightness(80%)",
 
                 }}
             >
@@ -44,6 +45,7 @@ export function Background() {
                     top: 0,
                     left: 0,
                     zIndex: -1,
+                    filter: "brightness(80%)",
 
                 }}
 

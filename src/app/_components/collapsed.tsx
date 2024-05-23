@@ -22,7 +22,7 @@ export function Collapsed({
                     {author}
                 </h3>
                 <h4 className="text-xl mb-0 leading-snug">
-                    {title}{(title) ? ", " : ""} {year}
+                    {title}{(title) ? " | " : ""} {year}
                 </h4>
             </Link>
         </div>
