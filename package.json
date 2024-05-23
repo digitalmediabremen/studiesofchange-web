@@ -4,7 +4,7 @@
     "dev": "python3 scripts/process_text.py && next",
     "dev-only": "next",
     "build": "python3 scripts/process_text.py && next build",
-    "fetch": "python3 scripts/fetch_data.py",
+    "fetch": "python3 scripts/process_data.py",
     "start": "next start",
     "qrcode": "node scripts/generateqr.mjs"
   },
