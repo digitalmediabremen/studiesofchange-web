@@ -4,8 +4,7 @@ author: "Youngji Cho"
 title: "The Privileged Land (v1.0)"
 year: "2024"
 medium_type: "Mixed media installation"
-material: "Single-channel video, 4K, color, stereo sound, 9’11” loop.
-ceramics, candles, lights"
+material: "Single-channel video, 4K, color, stereo sound, 9’11” loop."
 dimension: ""
 excerpt: "War, genocide, colonisation, division, death, intergenerational trauma, privilege, and insomnia. The Privileged Land (v1.0) is an ongoing multimedia practice of translating the status quo of living in Germany as a South Korean woman in the current times - in the form of a presentable artwork.Youngji Cho has been struggled to fall asleep since the beginning of October 2023. The ongoing genocide triggered her intergenerational trauma of war, death, colonisation, and division..."
 ---

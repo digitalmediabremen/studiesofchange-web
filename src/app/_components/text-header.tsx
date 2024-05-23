@@ -18,8 +18,8 @@ export function TextHeader({ title, subtitle, author, year, medium_type, materia
   if (year) meta.push(<TextWorkinfo>{year}<br/>-</TextWorkinfo>)
   // if (year || author) meta.push(<div className="h-5"></div>)
   if (medium_type || material || dimension) meta.push(<TextWorkinfo>
-      {medium_type}<br />-<br />
-      {material}<br />-<br />
+      {medium_type}<br />
+      {material}<br />
       {dimension}
     </TextWorkinfo>)
   if (year || author || medium_type || material || dimension) meta.push(<div className="md:block"></div>)
