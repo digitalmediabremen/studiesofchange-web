@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from 'next/image';
-import title_img from "@/../public/assets/design/title.png";
+import title_img from "@/../public/assets/design/title_1080.png";
 
 const Header = () => {
   return (

@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import bg01 from "@/../public/assets/design/arrow@2x.png";
-import bg02 from "@/../public/assets/design/back@2x.png";
-import border from "@/../public/assets/design/border@2x.png";
+import bg01 from "@/../public/assets/design/arrow@2x_1080.png";
+import bg02 from "@/../public/assets/design/back@2x_1080.png";
+import border from "@/../public/assets/design/border@2x_1080.png";
 
 export function Background() {
     return (
