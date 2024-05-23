@@ -1,3 +1,6 @@
+## Warning: QRCODE is linked to the github page!
+
+
 ### How to Run Locally
 
 ```bash
