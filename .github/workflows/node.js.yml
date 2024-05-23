@@ -74,9 +74,17 @@ jobs:
 
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      
+      - name: Install python dependency
+        run: |
+          sudo apt-get install python3
+          sudo apt-get install python3-pip
+          pip3 install --upgrade pip
+          pip3 install docx
 
       - name: Fetch google doc
         run: npm run fetch
+
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
