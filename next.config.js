@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-    basePath: "/studiesofchange-web",
+    // basePath: "/studiesofchange-web",
     reactStrictMode: true,
     output: 'export',
     images:{
