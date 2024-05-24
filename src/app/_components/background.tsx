@@ -7,7 +7,7 @@ export function Background() {
     return (
         <section>
             <div
-                className="bg-cover bg-top bg-no-repeat animate-bg"
+                className="bg-cover bg-top bg-no-repeat"
                 style={{
                     backgroundImage: `url(${bg02.src})`,
                     width: "100vw",
