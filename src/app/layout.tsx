@@ -23,26 +23,26 @@ export default function RootLayout({
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href={base + "favicon/apple-touch-icon.png"}
+          href={"/favicon/apple-touch-icon.png"}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href={base + "/favicon/favicon-32x32.png"}
+          href={"/favicon/favicon-32x32.png"}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href={base + "/favicon/favicon-16x16.png"}
+          href={"/favicon/favicon-16x16.png"}
         />
         <link rel="manifest" href={base + "/favicon/site.webmanifest"} />
         <link rel="shortcut icon" href={base + "/favicon/favicon.ico"} />
         <meta name="msapplication-TileColor" content="#000000" />
         <meta
           name="msapplication-config"
-          content={base + "favicon/browserconfig.xml"}
+          content={"/favicon/browserconfig.xml"}
         />
         <meta name="theme-color" content="#000" />
       </head>
