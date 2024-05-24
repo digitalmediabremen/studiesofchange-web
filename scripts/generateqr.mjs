@@ -26,6 +26,6 @@ const getNames = (folderPath) => {
 
 const names = getNames('_texts');
 names.forEach(name => {
-    const txt = `https://digitalmediabremen.de/studiesofchange-web/texts/${name.replace('.md', '')}`;
-    saveQR(txt, `qrcode/${name}.png`);
+    const txt = `https://studiesofchange.hfk-bremen.de/texts/${name.replace('.md', '.html')}`;
+    saveQR(txt, `qrcode/${name.replace('.md','')}.png`);
 });

@@ -19,10 +19,10 @@ export function Collapsed({
         <div className="md:pr-10">
             <Link href={`/texts/${slug}`}>
                 <h3 className="text-3xl leading-snug font-serif">
-                    {author}
+                    {title}
                 </h3>
                 <h4 className="text-xl mb-0 leading-snug">
-                    {title}{(title) ? " | " : ""} {year}
+                    {author}
                 </h4>
             </Link>
         </div>

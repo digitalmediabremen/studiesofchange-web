@@ -6,6 +6,9 @@ year: "2024"
 medium_type: "Installation"
 material: "Arduino, custom PCB, silicon"
 dimension: "15cm*15cm*10cm"
+equips: ""
+needs: ""
+status: ""
 excerpt: "We are just one form of life on Earth. From the perspective of the entire planet, plants are the main inhabitants, while humans are a very minor presence. In any urban space, there are wild grasses, microorganisms, etc., but our living spaces are extremely exclusive..."
 ---
 We are just one form of life on Earth. From the perspective of the entire planet, plants are the main inhabitants, while humans are a very minor presence. In any urban space, there are wild grasses, microorganisms, etc., but our living spaces are extremely exclusive. Humans only allow people and a few other species into these spaces, leaving many beings, such as invisible microorganisms like bacteria and viruses, excluded. According to Michael Pollan's viewpoint, only certain species that satisfy human needs become dominant on a global scale. Although the International Commission on Stratigraphy (ICS) has not officially recognized the Anthropocene as a geological epoch, our actions and ways of seeing things have already created a new geological era. Future beings or humans examining the geological period of our current existence will find it distinct from others. Amid the currents of era and technological advancement, humans have gradually evolved into beings that require technological intermediation. Thus, for posthumanists, "human" now resembles a bizarre animal robot.

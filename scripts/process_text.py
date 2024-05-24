@@ -18,7 +18,7 @@ mypath = pathlib.Path(__file__).parent.resolve()
 
 url = "https://docs.google.com/document/d/1BCMRd1i1gBC3QLQRgUbdr2NovkSM8K0xoJLwaWkVamc/export?format=docx"
 
-legend = ["author", "title", "year", "statement", "medium_type", "material", "dimension"]
+legend = ["author", "title", "year", "statement", "medium_type", "material", "dimension", "equips", "needs", "status"]
 artist = {
     "author": "name",
     "title": "title",
@@ -26,7 +26,10 @@ artist = {
     "statement": "statement",
     "medium_type": "type",
     "material": "material",
-    "dimension": "dimension"
+    "dimension": "dimension",
+    "equips": "equips",
+    "needs": "needs",
+    "status": "status",
 }
 
 def process_excerpt(data):
@@ -118,6 +121,7 @@ os.makedirs(os.path.join(mypath, "artists"), exist_ok=True)
 # write to markdown
 # clean up the names, very muddy code here
 for i in range(len(artists)):
+    if artists[i]['status'] == "Out": continue
     md = to_markdown(artists[i])
     name = artists[i]['author']
     name = unidecode(name)

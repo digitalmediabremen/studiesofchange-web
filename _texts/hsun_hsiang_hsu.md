@@ -6,6 +6,9 @@ year: "2024"
 medium_type: "Audiovisual Performance"
 material: "Projector, Speaker"
 dimension: ""
+equips: ""
+needs: ""
+status: ""
 excerpt: ""
 ---
 
