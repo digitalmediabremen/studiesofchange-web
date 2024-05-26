@@ -29,15 +29,16 @@ const getNames = (folderPath) => {
 
 const names = getNames('_texts');
 names.forEach(name => {
-    const txt = `https://studiesofchange.hfk-bremen.de/texts/${name.replace('.md', '.html')}`;
+    const txt = `https://studiesofchange.hfk-bremen.de/texts/${name.replace('.md', '')}`;
     saveQR(txt, `qrcode/${name.replace('.md','')}.png`);
-    toTransparent(`qrcode/${name.replace('.md','')}.png`, `qrcode/${name.replace('.md','')}.png`);
+    
 });
 
 
 
-// PNG = require("pngjs").PNG;
-
+names.forEach(name => {
+    toTransparent(`qrcode/${name.replace('.md','')}.png`, `qrcode/${name.replace('.md','')}.png`);
+});
 
 
 

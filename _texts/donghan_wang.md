@@ -1,12 +1,12 @@
 ---
 type: artist
 author: "Donghan Wang"
-title: ""
+title: "Phytophilia"
 year: "2024"
 medium_type: "Installation"
 material: "Arduino, custom PCB, silicon"
 dimension: "15cm*15cm*10cm"
-equips: ""
+equips: "donghan_wang"
 needs: ""
 status: ""
 excerpt: "We are just one form of life on Earth. From the perspective of the entire planet, plants are the main inhabitants, while humans are a very minor presence. In any urban space, there are wild grasses, microorganisms, etc., but our living spaces are extremely exclusive..."
