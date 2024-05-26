@@ -1,5 +1,8 @@
 import QRCode from 'qrcode'
+import PNG from 'pngjs/browser.js';
 import fs from 'fs'
+
+const png = PNG.PNG;
 
 const saveQR = async (text, filename) => {
     try {
@@ -28,4 +31,40 @@ const names = getNames('_texts');
 names.forEach(name => {
     const txt = `https://studiesofchange.hfk-bremen.de/texts/${name.replace('.md', '.html')}`;
     saveQR(txt, `qrcode/${name.replace('.md','')}.png`);
+    toTransparent(`qrcode/${name.replace('.md','')}.png`, `qrcode/${name.replace('.md','')}.png`);
 });
+
+
+
+// PNG = require("pngjs").PNG;
+
+
+
+
+function toTransparent(imagePath, outputPath) {
+    fs.createReadStream(imagePath)
+  .pipe(
+    new png({
+      filterType: 4,
+    })
+  )
+  .on("parsed", function () {
+    for (var y = 0; y < this.height; y++) {
+      for (var x = 0; x < this.width; x++) {
+        var idx = (this.width * y + x) << 2;
+
+        // invert color
+
+        if(this.data[idx]>250){
+            this.data[idx] = 0;
+            this.data[idx + 1] = 0;
+            this.data[idx + 2] = 0;
+            this.data[idx + 3] = 0;
+        }
+      }
+    }
+
+    this.pack().pipe(fs.createWriteStream(outputPath));
+  });
+}
+
