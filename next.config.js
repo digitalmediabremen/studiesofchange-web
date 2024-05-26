@@ -7,7 +7,7 @@ const nextConfig = {
     images:{
       unoptimized: true
     },
-    trailingSlash: true,
+    // trailingSlash: true, // enable if you want to fix the .html and 404 refresh issue
   }
   
   module.exports = nextConfig
