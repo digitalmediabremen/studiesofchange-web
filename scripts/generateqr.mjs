@@ -29,7 +29,7 @@ const getNames = (folderPath) => {
 
 const names = getNames('_texts');
 names.forEach(name => {
-    const txt = `https://studiesofchange.hfk-bremen.de/texts/${name.replace('.md', '.html')}`;
+    const txt = `https://studiesofchange.hfk-bremen.de/texts/${name.replace('.md', '')}`;
     saveQR(txt, `qrcode/${name.replace('.md','')}.png`);
     
 });
