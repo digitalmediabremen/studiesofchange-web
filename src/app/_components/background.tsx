@@ -16,7 +16,7 @@ export function Background() {
                     top: 0,
                     left: 0,
                     zIndex: -1,
-                    filter: "brightness(80%)",
+                    filter: "brightness(80%) grayscale(100%)",
                 }}
             >
             </div>

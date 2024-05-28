@@ -18,7 +18,7 @@ export function Collapsed({
     return (
         <div className="md:pr-10">
             <Link href={`/texts/${slug}`}>
-                <h3 className="text-3xl leading-snug font-serif">
+                <h3 className="text-3xl leading-snug">
                     {title}
                 </h3>
                 <h4 className="text-xl mb-0 leading-snug">
