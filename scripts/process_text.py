@@ -83,7 +83,7 @@ def remove_emojis(data):
 
 # download file
 filename = os.path.join(mypath, 'data.docx')
-cmd = f'wget -O {os.path.join(mypath,filename)} ' + url
+cmd = f'wget -O "{os.path.join(mypath,filename)}" ' + url
 print(os.popen(cmd).read())
 
 data = []
@@ -138,5 +138,5 @@ for i in range(len(artists)):
 
 
 # move to the location
-cmd = f"mv -v {os.path.join(mypath, 'artists', '*')} {os.path.join(mypath, '..', '_texts')}"
+cmd = f"mv -v \"{os.path.join(mypath, 'artists')}\"/* \"{os.path.join(mypath, '..', '_texts')}\""
 print(os.popen(cmd).read())
