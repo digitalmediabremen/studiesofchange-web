@@ -57,14 +57,14 @@ export default function Index() {
           </div>
           <div className="md:grid grid-cols-2 ml-2 md:mr-2">
             <div>
-              <h3 className="mt-10 text-2xl md:text-3xl leading-snug md:text-right">
-                Opening Hours <br />
+              <h3 className="mt-10 italic text-2xl md:text-3xl leading-snug">
+                Opening times <br />
               </h3>
-              <h4 className="mb-1 mt-1 text-2xl lg:text-4xl md:text-right leading-snug ">
-                30.05 — 31.05: 16:00-20:00
+              <h4 className="mb-1 mt-1 text-2xl lg:text-3xl leading-snug ">
+                <span className="inline-block w-32 md:w-52">Weekdays:</span> 16:00 - 20:00
               </h4>
-              <h4 className="mb-3 mt-1 text-2xl lg:text-4xl md:text-right leading-snug ">
-                01.06 — 02.06: 14:00-20:00
+              <h4 className="mb-3 mt-1 text-2xl lg:text-3xl leading-snug ">
+                <span className="inline-block w-32 md:w-52">Weekend:</span> 14:00 - 20:00
               </h4>
 
             </div>
