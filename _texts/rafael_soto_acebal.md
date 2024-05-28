@@ -7,8 +7,8 @@ medium_type: "Light Installation"
 material: "Acrylic, TPU, Aluminium profile,
 Polarization Filters,Light Panels"
 dimension: "600x600x185cm"
-equips: "rafael_soto_acebal"
-needs: ""
+id: "rafael_soto_acebal"
+qrcode: ""
 status: ""
 excerpt: ""
 ---

@@ -8,8 +8,8 @@ material: "3 multimedia objects, archive diaslides, expanded animation (3 min), 
 dimension: "300mm x 220 mm x 1200mm (one object)
 
 3m x 3m total"
-equips: "slava_romanov"
-needs: ""
+id: "slava_romanov"
+qrcode: ""
 status: ""
 excerpt: "PNCTM converges the past and present through the intimate lens of personal memory and perception. It weaves the complex dialogue between historical diaslides and contemporary digital emanations.The medium of collectible, archival, and simply discarded transparencies is disconnected from its original contexts. PNCTM reanimates these fragments by engaging AI and generative tools to expand, distort, reimagine and highlight the static images..."
 ---

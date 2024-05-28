@@ -18,7 +18,7 @@ mypath = pathlib.Path(__file__).parent.resolve()
 
 url = "https://docs.google.com/document/d/1BCMRd1i1gBC3QLQRgUbdr2NovkSM8K0xoJLwaWkVamc/export?format=docx"
 
-legend = ["author", "title", "year", "statement", "medium_type", "material", "dimension", "equips", "needs", "status"]
+legend = ["author", "title", "year", "statement", "medium_type", "material", "dimension", "id", "qrcode", "status"]
 artist = {
     "author": "name",
     "title": "title",
