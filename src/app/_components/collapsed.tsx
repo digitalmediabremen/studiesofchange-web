@@ -17,7 +17,7 @@ export function Collapsed({
 }: Props) {
     return (
         <div className="md:pr-10">
-            <Link href={`/texts/${slug}`}>
+            <Link href={`/texts/${slug}.html`}>
                 <h3 className="text-3xl leading-snug">
                     {title}
                 </h3>
