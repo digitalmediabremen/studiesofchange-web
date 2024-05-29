@@ -29,7 +29,7 @@ const performances: Array<any> = [
             },
             {
                 time: "19:30",
-                title: "Cellolar Performance: From the Bottom of my CPU",
+                title: "Cellular Performance: From the Bottom of my CPU",
                 author: "Ralf Baecker",
             },
             {
@@ -40,7 +40,7 @@ const performances: Array<any> = [
             {
                 time: "20:30",
                 title: "STRATIS",
-                author: "Miguel Chaparro x Hsun Hsiang Hsu",
+                author: "Miguel Chaparro x Slava Romanov",
             },
         ],
     },
