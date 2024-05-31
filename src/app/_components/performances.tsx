@@ -45,10 +45,20 @@ const performances: Array<any> = [
         ],
     },
     {
+        date: "31.05",
+        performance: [
+            {
+                time: "16:30, 17:30, 18:30",
+                title: "Rehydrating Sphagnum Moss",
+                author: "Katja Striedelmeyer",
+            }
+        ]
+    },
+    {
         date: "01.06",
         performance: [
             {
-                time: "14:30, 15:30, 16:30, 17:30, 18:30, 19:00",
+                time: "14:30, 15:30, 16:30, 17:30, 18:30, 19:30",
                 title: "Rehydrating Sphagnum Moss",
                 author: "Katja Striedelmeyer",
             },
@@ -58,7 +68,7 @@ const performances: Array<any> = [
         date: "02.06",
         performance: [
             {
-                time: "14:30, 15:30, 16:30, 17:30, 18:30, 19:00",
+                time: "14:30, 15:30, 16:30, 17:30, 18:30, 19:30",
                 title: "Rehydrating Sphagnum Moss",
                 author: "Katja Striedelmeyer",
             },
