@@ -1,35 +1,14 @@
 import os
-from docx.api import Document
 import pandas as pd
 from copy import deepcopy
-import pathlib
 from unidecode import unidecode
+import pathlib
 import re
 
-"""
-++++++++++++++++
-This script processes the text from the google doc and converts it to markdown.
-It depends on the order of the columns in the google doc.
-So, if the order changes, the legend and artist dictionary should be updated.
-++++++++++++++++
-"""
 
 mypath = pathlib.Path(__file__).parent.resolve()
+url = "https://docs.google.com/spreadsheets/d/1-ccJ7oY83qNj3V7RxqzdJ_obq8_7OHOVJ-yZHGq5Me4/export?gid=912516884&format=xlsx"
 
-url = "https://docs.google.com/document/d/1BCMRd1i1gBC3QLQRgUbdr2NovkSM8K0xoJLwaWkVamc/export?format=docx"
-
-legend = ["author", "title", "year", "statement", "medium_type", "material", "dimension", "cardinfo", "equips", "needs", "id", "website_link", "qrcode", "qrcode_url", "status"]
-selective_items = ["author", "title", "year", "statement", "medium_type", "material", "dimension", "status"]
-artist = {
-    "author": "name",
-    "title": "title",
-    "year": "year",
-    "statement": "statement",
-    "medium_type": "type",
-    "material": "material",
-    "dimension": "dimension",
-    "status":"in"
-}
 
 def process_excerpt(data):
     excerpt = ""
@@ -87,28 +66,25 @@ def remove_emojis(data):
                       "]+", re.UNICODE)
     return re.sub(emoj, '', data)
 
-# download file
+
+legend = ["author", "title", "year", "statement", "medium_type", "material", "dimension", "cardinfo", "equips", "needs", "id", "website_link", "qrcode", "qrcode_url", "status"]
+selective_items = ["author", "title", "year", "statement", "medium_type", "material", "dimension", "status"]
+artist = {
+    "author": "name",
+    "title": "title",
+    "year": "year",
+    "statement": "statement",
+    "medium_type": "type",
+    "material": "material",
+    "dimension": "dimension",
+    "status":"in"
+}
+
 filename = os.path.join(mypath, 'data.xlsx')
 cmd = f'wget -O "{os.path.join(mypath,filename)}" ' + url
 print(os.popen(cmd).read())
 
-data = []
-doc = Document(filename)
-table = doc.tables[0]
-
-# create dataframe
-keys = None
-for i, row in enumerate(table.rows):
-    text = (cell.text for cell in row.cells)
-
-    if i == 0:
-        keys = tuple(text)
-        continue
-    row_data = dict(zip(keys, text))
-    data.append(row_data)
-    # print (data)
-
-df = pd.DataFrame(data)
+df = pd.read_excel(filename, 'Work')
 
 artists = []
 for i, row in df.iterrows():
