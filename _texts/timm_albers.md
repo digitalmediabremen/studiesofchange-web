@@ -6,8 +6,6 @@ year: "2024"
 medium_type: "Sound Installation"
 material: "Aluminum tubes, wire rope, 3d printed parts, electronics"
 dimension: "20cm x 6cm x 6cm"
-id: "Timm Albers, 2024, Sound Installation"
-qrcode: ""
 status: ""
 excerpt: "To Regulate the Noise investigates the relation between modes of interaction and technological media, as well as cognitive and technical processing. The sound installation consists of six objects hanging from the ceiling, which echo their sonic environment. For this, they record, transform and play back, while attempting to steer the soundscape by means of their inherent control logic..."
 ---

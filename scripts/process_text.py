@@ -18,7 +18,8 @@ mypath = pathlib.Path(__file__).parent.resolve()
 
 url = "https://docs.google.com/document/d/1BCMRd1i1gBC3QLQRgUbdr2NovkSM8K0xoJLwaWkVamc/export?format=docx"
 
-legend = ["author", "title", "year", "statement", "medium_type", "material", "dimension", "id", "qrcode", "status"]
+legend = ["author", "title", "year", "statement", "medium_type", "material", "dimension", "cardinfo", "equips", "needs", "id", "website_link", "qrcode", "qrcode_url", "status"]
+selective_items = ["author", "title", "year", "statement", "medium_type", "material", "dimension", "status"]
 artist = {
     "author": "name",
     "title": "title",
@@ -27,14 +28,14 @@ artist = {
     "medium_type": "type",
     "material": "material",
     "dimension": "dimension",
-    "equips": "equips",
-    "needs": "needs",
-    "status": "status",
+    "status":"in"
 }
 
 def process_excerpt(data):
     excerpt = ""
+    if pd.isna(data): return excerpt
     ar = data.split(". ")
+
     if len(ar) <= 3:
         excerpt = data.replace('"',"'").replace("\n","")
     else:
@@ -45,20 +46,25 @@ def process_excerpt(data):
 def to_markdown(data):
     md = "---\n"
     md += "type: artist\n"
-    for i in range(len(legend)):
-        if legend[i] == "author":
-            d = data[legend[i]].replace('"',"'")
+    for i in range(len(selective_items)):
+        if selective_items[i] == "author":
+            d = data[selective_items[i]].replace('"',"'")
             d = remove_emojis(d).strip()
-            md += f"{legend[i]}: \"{d}\"\n"
+            md += f"{selective_items[i]}: \"{d}\"\n"
             continue
-        if legend[i] == "statement": continue
-        d = data[legend[i]].replace('"',"'")
-        md += f"{legend[i]}: \"{d}\"\n"
+        if selective_items[i] == "statement": continue
+        d = data[selective_items[i]].replace('"',"'") if isinstance(data[selective_items[i]], str) else data[selective_items[i]]        
+        if pd.isna(d): d = ''
+        md += f"{selective_items[i]}: \"{d}\"\n"
+
     md += f'excerpt: "{process_excerpt(data["statement"])}"\n'
+
     md += "---\n"
-    md += f"{data['statement']}\n"
+    if pd.isna(data['statement'])==False:
+        md += f"{data['statement']}\n"
+    else:
+        md += ""
     return md
-    
 
 def remove_emojis(data):
     emoj = re.compile("["
@@ -82,7 +88,7 @@ def remove_emojis(data):
     return re.sub(emoj, '', data)
 
 # download file
-filename = os.path.join(mypath, 'data.docx')
+filename = os.path.join(mypath, 'data.xlsx')
 cmd = f'wget -O "{os.path.join(mypath,filename)}" ' + url
 print(os.popen(cmd).read())
 
@@ -104,7 +110,6 @@ for i, row in enumerate(table.rows):
 
 df = pd.DataFrame(data)
 
-# iterate over rows
 artists = []
 for i, row in df.iterrows():
     if i==0: continue
@@ -112,22 +117,24 @@ for i, row in df.iterrows():
     item = deepcopy(artist)
 
     for j in range(len(legend)):
-        item[legend[j]] = d[j]
+        # if legend[j] in selective_items:
+        if pd.isna(d[j]) or d[j] == 'nan':
+            item[legend[j]] = ''
+        else:
+            item[legend[j]] = d[j].rstrip('\n').rstrip() if isinstance(d[j],str) else d[j]
     artists.append(item)
-    
 
-os.makedirs(os.path.join(mypath, "artists"), exist_ok=True)
 
-# write to markdown
-# clean up the names, very muddy code here
+
+
 for i in range(len(artists)):
-    if artists[i]['status'] == "Out": continue
+    if artists[i]['status'].lower() == "out": continue
     md = to_markdown(artists[i])
     name = artists[i]['author']
     name = unidecode(name)
     if name[0] == " ": name = name[1:]
     name = name.replace(' ', '_').lower()
-    name = name.replace(',', '') # only one exception
+    name = name.replace(',', '') # only one exception    
     filename = os.path.join(mypath,
                             "artists",
                             name)+".md"

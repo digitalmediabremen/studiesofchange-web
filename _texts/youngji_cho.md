@@ -6,8 +6,6 @@ year: "2024"
 medium_type: "Video Installation"
 material: "Single-channel video, 4K, color, stereo sound, 9’11” loop."
 dimension: ""
-id: "Youngji Cho, 2024, Video Installation"
-qrcode: ""
 status: ""
 excerpt: "The Privileged Land (v1.0) is an ongoing multimedia practice of translating the status quo of living in Germany as a South Korean woman in the current times.Youngji Cho has been struggled to fall asleep since the beginning of October 2023. The ongoing genocide triggered her intergenerational trauma of war, death, colonisation, and division. She sometimes regretted her decision to move to Germany, frustrated, suffering, stuck, and feeling privileged to live in this country..."
 ---

@@ -6,8 +6,6 @@ year: "2024"
 medium_type: "Video Installation"
 material: "Single-channel digital video, HD, color, sound, subtitled, 7'49''."
 dimension: ""
-id: "Jiawen Yao, 2024, Video Installation"
-qrcode: ""
 status: ""
 excerpt: "In this video essay, leak in the promiscuous machines and prurient governing entities is brought to the forefront as systemic vulnerabilities. A message you send out to your loved one over the TCP/IP protocol is slutty. Audio and video signal cables are constantly radiating RF emanations..."
 ---

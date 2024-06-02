@@ -6,8 +6,6 @@ year: "2024"
 medium_type: "Installation"
 material: "Aluminium profile, Acrylics, Custom electronics, Step motor, Toggle switch"
 dimension: ""
-id: "Haram Choi, 2024, Installation"
-qrcode: ""
 status: ""
 excerpt: "This machine counts, in binary, starting from 0 up to 4,294,967,295 that is 2³²-1. A reasonably modern computer will need only a few seconds to count that amount of numbers(approx. 4.2 billion)..."
 ---

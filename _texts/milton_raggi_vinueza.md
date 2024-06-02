@@ -6,8 +6,6 @@ year: "2024"
 medium_type: "Electromechanical Sound Performance"
 material: "Hidroxy Generator, Conveyor Belt, Speakers, TV, Mac Pro"
 dimension: "1.30m x 4m x 30cm"
-id: "Milton Raggi Vinueza, 2024, Electromechanical Sound Performance"
-qrcode: ""
 status: ""
 excerpt: "“The Requiem of Ulam” is a sound installation with a high performative component based on a system of controlled explosions of hydrogen bubbles. The project embodies a criticism of nationalism and questions, from the artistic gesture, the power structures that inhabit concepts such as Homeland or Nation.In its materiality, the work is made up of three important physical parts: a hydrogen producing cell, a conveyor belt and an interactive video system.The hydrogen cell uses electrolysis to break down and separate water into their essential parts: Hydrogen and Oxygen. From this process I grow Hydroxy, a highly flammable gas that, combined with soap and glycerin, I use to create bubbles.Calmly, on the conveyor belt I deposit each bubble in a specific order..."
 ---

@@ -6,8 +6,6 @@ year: "2023"
 medium_type: "Video Installation"
 material: "Single-channel digital video, HD, color, silent, 5'35''."
 dimension: ""
-id: "Ygor Anario, 2023, Video Installation"
-qrcode: ""
 status: ""
 excerpt: "A temporal object catches glimpses of a camera seeing through someone else's eye. In Bremen, a pipeline near the Stadtwaldsee was photographed using a Chinese smartphone purchased two years ago from an Alibaba Group website. 'A.I..."
 ---
